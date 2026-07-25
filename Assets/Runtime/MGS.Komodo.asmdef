@@ -1,0 +1,16 @@
+{
+    "name": "MGS.Komodo",
+    "rootNamespace": "MGS.Komodo",
+    "references": [
+        "GUID:66c4208f2982bc74d836b58b997ecd97"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
