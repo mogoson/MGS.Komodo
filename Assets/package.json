@@ -1,0 +1,16 @@
+{
+    "name": "com.mgs.komodo",
+    "version": "1.0.0",
+    "displayName": "Komodo",
+    "description": "Silent license controller for Unity project.",
+    "unity": "2021.3",
+    "keywords": [
+        "license",
+        "activate"
+    ],
+    "author": {
+        "name": "Mogoson",
+        "email": "mogoson@outlook.com",
+        "url": "https://github.com/mogoson"
+    }
+}
