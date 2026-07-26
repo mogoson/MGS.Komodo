@@ -32,9 +32,9 @@ namespace MGS.Komodo
 
         static IEnumerator StartSkulk(KomodoDragon dragon)
         {
-            var isValid = false;
-            yield return VerifyLicense(valid => isValid = valid);
-            if (isValid)
+            LicenseResult result = default;
+            yield return VerifyLicense(rslt => result = rslt);
+            if (result.code == ResultCode.Valid)
             {
                 UnityEngine.Object.Destroy(dragon.gameObject);
                 yield break;
@@ -43,7 +43,7 @@ namespace MGS.Komodo
             yield return StartAttack();
         }
 
-        static IEnumerator VerifyLicense(Action<bool> finished)
+        static IEnumerator VerifyLicense(Action<LicenseResult> finished)
         {
             var result = LicenseHub.VerifyLicense();
             if (result.code != ResultCode.Valid)
@@ -52,7 +52,7 @@ namespace MGS.Komodo
                 yield return ReadLicense(tex => license = tex);
                 result = LicenseHub.ActivateLicense(license);
             }
-            finished?.Invoke(result.code == ResultCode.Valid);
+            finished?.Invoke(result);
         }
 
         static IEnumerator ReadLicense(Action<string> finished)
