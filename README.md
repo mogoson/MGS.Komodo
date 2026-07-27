@@ -22,9 +22,13 @@
 ## Usage
 
 - Unity menu "Toos/License/Settings" to set license parameters.
+  - Should not change (Re Generate) the keys after project published.
 - Unity menu "Toos/License/Builder" to build license.
-- Save license file to Application.streamingAssetsPath.
-- Update license file to Application.persistentDataPath if previous license invalid.
+  - Trial button to get a license request text for trial.
+  - The license build from trial request without bind device.
+- Save trial license file named {productName}.lic to streamingAssetsPath.
+- Find the request file named {productName}.lre at path persistentDataPath if trial license is expired.
+- Build license base on the request file and Save license file named {productName}.lic to persistentDataPath.
 
 ------
 

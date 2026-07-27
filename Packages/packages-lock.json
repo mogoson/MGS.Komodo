@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "01629ee9f68cb9e4f736be3f8ff8333e4b9592d3"
+      "hash": "09a1112b982ffae128edc57959f5de19d7041ae1"
     },
     "com.mgs.license": {
       "version": "https://github.com/mogoson/MGS.License.git?path=/Assets",
@@ -14,7 +14,7 @@
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
-      "hash": "fdd3a89066b5f7fecb33fa8ccfb1f6b7a640b381"
+      "hash": "279b5828fc9b3b7487b5c5a635642a5ffb80ef41"
     },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
